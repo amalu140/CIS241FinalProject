@@ -1,0 +1,443 @@
+/* FORMATTING FOR ALL PAGES */
+* { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Lato', sans-serif;
+    text-decoration: none; 
+}
+
+body{
+    background-color: rgb(250, 250, 250);
+}
+
+/* header rules */
+header{
+display: flex; 
+position: fixed;
+width: 100%;
+height: 10%; 
+background-color: #c8ae7e; 
+height: 5rem;
+margin: auto; 
+align-items: center;
+z-index: 2;
+}
+
+/* menu rules*/
+
+  .menulinks li{
+    padding: 1rem;
+    list-style-type: none;
+     
+} 
+
+.menulinks li a{
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: bold;
+justify-content: space-around;
+color: white;
+padding: 5px 20px; 
+transition: .2s ease;
+} 
+
+/* hover rules */
+
+ul li a:hover{
+    color: black;
+}
+
+.fa-github:hover,.fa-linkedin:hover {
+     color: black;
+ }
+
+ 
+.logo-container, .menulinks, .socialmedia{
+    display:flex; 
+}
+.logo-container, .menulinks{
+    flex: 1; 
+}
+
+.socialmedia{
+  flex:1; 
+  justify-content: flex-end;
+  margin-right: 10rem;
+}
+.fa-linkedin, .fa-github {
+    color: white;
+    letter-spacing: 2rem;
+}
+
+.fa-home, .fa-pen-alt, .fa-tag, .fa-lightbulb, .fa-book-open, .fa-user-friends{
+    color: white;
+    text-shadow: 1.5px 1.5px black;
+    letter-spacing: 2rem;
+}
+.socialmedia a:hover{
+color: black;
+}
+ #page1Link, #page2Link, #page3Link, #page4Link, #page5Link {
+    background-color: #ad925f; 
+} 
+    /* end hover rules */
+
+.bannericons{
+    align-self: center;
+    padding-top: 5rem;
+    padding-left: 25px;
+    justify-content: flex-end;
+    text-align: center;
+  
+}
+
+/* banner rules*/
+.banner{
+    background: url(../img/banner.jpg) no-repeat fixed; 
+    background-size: cover;
+    height: 18rem;
+}
+
+/* FOOTER */
+footer {
+    overflow: hidden;
+    position: relative;
+    margin-top: auto;
+    text-align: center;
+    left: 0;
+    height: 200px;
+    bottom: 0; 
+    width: 100%;
+    background-color: rgb(80, 76, 76);
+    color: white; 
+  }
+
+  footer .logofooter{
+      width: 100%;
+      height: 25%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      float: left;
+      justify-content: center;
+  }
+
+  .logofooter img{
+      justify-self: center;
+      width: 90px;
+      height: auto;
+  }
+
+  footer .footercontent{
+      margin-top: 1rem;
+      text-align: center;
+  }
+
+
+/* HOME PAGE CSS */
+.AllAboutMe{
+    max-width: 45%;
+    float: left;
+    margin-left: 80px;
+    background-color: rgb(250, 250, 250);
+    overflow: auto;
+}
+
+.Polaroids{
+    max-width: 800px;
+    margin: auto;
+    background-color: rgb(250, 250, 250);
+    overflow: auto;
+}
+.gallery{
+    margin: 8px;
+    margin-bottom: 6px;
+    width: 200px;
+    border: 1px solid #ccc;
+    float: left;
+}
+.gallery img {
+    width:200px;
+    height: auto;
+
+}
+
+/* RESUME PAGE CSS */
+table{
+    box-shadow: 0 1px 6px black;
+    table-layout: fixed;
+    font-family: Arial, Helvetica, Geneva, Swiss, Sans-Serif;
+	font-size: 75%;
+    width:70%;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+
+th, caption{
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.table-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+tr:nth-of-type(even){
+    background-color:#f3f3f3;
+}
+.introduction-table{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+/* GUESTBOOK PAGE CSS */
+.formcontainer{
+    background-color: #dc9714;
+    width: 600px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.9);
+    height: auto;
+    padding: 20px;
+    margin:auto;
+    font-size: 18px;
+    font-family:'Arial Narrow';
+    margin-top: 1rem;
+    text-align: justify;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.inputbox{
+  border-radius: 20px;
+  padding: 4px;
+  width: 50%;
+  border: 2px solid black; 
+  font-family: "Lato", 'Times New Roman';
+}
+.button{
+background-color: #fff;
+  width:25%; 
+  padding:2px;
+  border-radius: 20px;
+}
+
+.radio{
+  width: 25%;
+  margin:auto;
+  height: auto;
+  text-align: left;
+}
+.checkboxes{
+  text-align: left;
+  width: 8rem;
+  margin: auto;
+}
+
+  /*  INTEREST PAGE CSS */
+
+        /* Page introduction */
+.interestlist{
+    width: 45%;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    list-style-type: circle;
+    padding: 0;
+}
+
+.interestlist ul a {
+    text-align: left;
+    text-decoration: underline;
+    color: #868029;
+    text-transform: capitalize;
+}
+
+    /* Cards */
+
+.containercards{
+    min-height: 25rem;
+
+}
+.individualcontainer{
+    position: relative;
+    float: left;
+    width:280px;
+    height:400px;
+    margin: auto;
+    margin-left: 45px;
+    margin-top: 1rem;
+
+}
+
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+
+            /* front card */
+
+.thefront1, .thefront2, .thefront3, .thefront4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 8px 8px 6px grey; 
+}
+.cardicon{
+    width: 60%;
+    height: 30%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.fa-signature, .fa-hiking, .fa-language, .fa-cookie-bite{
+    color: white;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right:3rem ;
+    text-shadow: 1px 1px 1px black;
+    
+}
+.cardinfo{
+    height: 25%;
+    width: 100%;
+    margin: auto;
+    
+}
+.cardinfo h2, h6{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+}
+
+            /* back card */
+
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 8px 8px 6px grey; 
+}
+.cardimagecontainer img{
+    width: 280px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 6px grey; 
+}
+
+.cardheader{
+    height: 20%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+
+}
+.cardheader h3, .cardheader h4{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.cardcontent{
+    position: absolute;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+.cardcontent p{
+    color: white;
+    padding: 8px;
+    margin-top: 15px;
+    background-color: rgba(0,0, 0, 0.4);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.cardcontent a{
+    text-decoration: none;
+    color: #cec218;
+}
+
+
+
+/* REFLECTION PAGE CSS */
+.MyreflectionsBox1{
+    width: 50%;
+    height:30rem;
+    float: left;
+    overflow: auto;
+    text-align: left;
+    font-size: 19px; 
+}
+
+.MyreflectionsBox1 h1, .reflectionicons h2{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.MyreflectionsBox2{
+    width: 50%;
+    height:30rem;
+    float: right;
+    overflow: auto;
+    background: url('../img/computercode.jpg') ;
+    background-size: cover;
+
+}
+
+.MyreflectionsBox3{
+    width: 50%;
+    height:30rem;
+    float: left;
+    overflow: auto;
+    background: url('../img/reflections.jpg') ;
+    background-size: cover;
+}
+.MyreflectionsBox4{
+    background-color: rgb(250, 250, 250);
+    width: 50%;
+    height:30rem;
+    float: right;
+    overflow: auto;
+}
+
+.reflectionicons{
+    width: 52%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    font-size: 19px; 
+
+}
+.fa-code, .fa-mouse, .fa-tv{
+    color: black;
+    margin: auto;
+    letter-spacing: 6rem;
+    margin-bottom: 4px;
+    
+}

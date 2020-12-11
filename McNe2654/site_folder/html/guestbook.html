@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guestbook Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "author" content="Amanda McNeil Huertas">
+    <meta name="keywords" content= "Guestbook page, Form for visitors of the website">
+    <meta name="description" content="This is the Guestbook Page for my Website">
+    <meta http-equiv="default-style" content="text/html">
+    <meta name="robots" content="follow">
+    <link rel="stylesheet" href="../css/myStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+   
+    <style>
+   h2{
+   color: white;
+   text-align: center;
+   padding: 1rem;  
+   font-family: Poppins, sans-serif; 
+   font-size: 4rem; 
+   text-shadow: 2px 2px black;
+   }
+   .formcontainer h1{
+    text-align: center;
+    margin-bottom: 15px;
+    color: white; 
+}
+
+    </style>
+   
+</head>
+<body class="page3">
+    <!-- HEADER SECTION -->
+<header>
+    <!-- Logo Section-->
+    <div class="logo-container">
+        <img style="position: relative; left: 50px;" src="../img/logoAM.png" alt="Letter 'A' and 'M' in uppercase">
+    </div>
+    <!-- Menu Section -->
+   <nav>
+    <ul class="menulinks">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li id= "page3Link"><a href="guestbook.html">Guestbook</a></li>
+      <li><a href="interest.html">Interest</a></li>
+      <li ><a href="reflections.html">Reflections</a></li>
+     </ul>
+  </nav>
+    <!-- Social Media -->
+    <div class="socialmedia">
+      <a href="https://www.linkedin.com/in/amanda-mcneil-huertas-6758351b6/" target="blank"><i class="fab fa-linkedin fa-3x"></i></a>  
+      <a href="https://github.com/amalu140" target="blank"><i class="fab fa-github fa-3x"></i></a> 
+    </div>
+</header>
+
+      <!-- Banner -->
+      <section class="banner">
+        <br>
+          <div class="bannericons">
+              <a href="#"><i class="fas fa-pen-alt fa-3x"></i></a>  
+              </div>
+          <h2>GUESTBOOK</h2>
+          <br>
+        </section>
+      <br>
+  
+    <!--Content  -->
+<div class="formcontainer" style="background-color: #dc9714;">
+    <!-- <a href="#"><i class="fas fa-pen-alt fa-2x" style="color: white;"></i></a> -->
+    <h1>Guestbook</h1>
+    <form method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+    
+        Enter Your Name: <br/> <input type="text" name="Name" class="inputbox" size="40" placeholder="Your name"/> 
+        <br/> 
+        <br/> 
+        Enter Your E-mail:  <br> <input type="text" name="Email" class="inputbox" size="40" placeholder="Your email"/> 
+        <br/>
+        <br/> 
+        Enter Your Website: <br> <input type="text" name="Website" class="inputbox" size="40" value="http://"/>
+        <br/>
+        <br/>
+        What country do you live in?  <br><input type="text" name="country" class="inputbox" size="40" placeholder="Your country "/>
+        <br/>  <br/>
+    
+        
+        How did you find my website? <br/> 
+        <select name="website">
+            <option>Select One</option>
+            <option>Just surfed in!</option>
+            <option>Word of mouth</option>
+            <option>By search engine</option>
+            <option>A friend sent me</option>
+            <option>Other</option>
+        </select>
+        <br/> <br/>
+           What is your experience as a Web Developer? <br/>
+            <div class="radio">
+            <input type="radio" name="experience" value="none"/>None <br/> 
+            <input type="radio" name="experience" value="beginner"/>Beginner<br/>
+            <input type="radio" name="experience" value="immediate"/>Immediate <br/>
+            <input type="radio" name="experience" value="advanced"/>Advanced <br/>
+              <br/> 
+            </div>
+    
+        What Web technologies are you interested in? (Check all that apply): 
+    <br/> 
+
+    <div class="checkboxes">
+        <input type="checkbox" name="html"/> HTML <br/>
+        <input type="checkbox" name="CSS"/> CSS <br/>
+        <input type="checkbox" name="JavaScript"/> JavaScript <br/>
+        <input type="checkbox" name="PHP"/> php <br/> <br/>
+</div> 
+    Comments: <br/> 
+    <textarea name="comments" cols="40" rows="4" placeholder="Enter your message here"></textarea>
+    <br/> <br/>
+    <input type="submit" class="button" value="submit"/> 
+    <input type="reset" class="button"> <br/>
+        
+    </form>
+</div>
+
+
+ <br> 
+<!-- START FOOTER -->
+
+<footer class="footer-container">
+    <div class="logofooter">
+      <img src="../img/logoAM.png" alt="Letter 'A' and 'M' in uppercase">
+    </div>
+    <br> <br> <br> <br> <br> <br>
+    <hr>
+    <br>
+ <div class="footercontent">
+ <h3>&copy;WebsiteProject2020</h3>
+</div>
+</footer>
+
+
+</body>
+</html>
